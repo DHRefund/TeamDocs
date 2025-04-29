@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@import '@liveblocks/react-ui/styles.css';
-@import '@liveblocks/react-lexical/styles.css';
+@import "@liveblocks/react-ui/styles.css";
+@import "@liveblocks/react-lexical/styles.css";
 
-@import '../styles/dark-theme.css';
+@import "../styles/dark-theme.css";
 
 /* ========================================== TAILWIND STYLES */
 @layer base {
@@ -228,31 +228,21 @@
   --lb-foreground-moderate: #fff;
 }
 
-.lb-button:where([data-variant='primary']) {
+.lb-button:where([data-variant="primary"]) {
   background-color: #161e30;
   color: #b4c6ee;
   padding: 8px;
 }
 
 .lb-button:where(
-    [data-variant='default']:not(
-        :is(
-            :enabled:hover,
-            :enabled:focus-visible,
-            [aria-expanded='true'],
-            [aria-selected='true']
-          )
+    [data-variant="default"]:not(
+        :is(:enabled:hover, :enabled:focus-visible, [aria-expanded="true"], [aria-selected="true"])
       )
   ) {
   color: #b4c6ee;
 }
 
-.lb-button:where(
-    :enabled:hover,
-    :enabled:focus-visible,
-    [aria-expanded='true'],
-    [aria-selected='true']
-  ) {
+.lb-button:where(:enabled:hover, :enabled:focus-visible, [aria-expanded="true"], [aria-selected="true"]) {
   --lb-button-background: #161e30;
 
   color: #b4c6ee;
@@ -275,7 +265,7 @@
 
 .lb-comment-content {
   background: #0b1527;
-  margin-top: 16px;
+  margin-top: 0;
   padding: 12px;
   border-radius: 4px;
   font-size: 14px;

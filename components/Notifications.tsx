@@ -38,7 +38,7 @@ const Notifications = () => {
                   href={`/documents/${notification.roomId}`}
                   showActions={false}
                   kinds={{
-                    thread: (props) => <InboxNotification.Thread {...props} showActions={true} showRoomName={true} />,
+                    thread: (props) => <InboxNotification.Thread {...props} showActions={false} showRoomName={false} />,
                     textMention: (props) => <InboxNotification.TextMention {...props} showRoomName={false} />,
                     $documentAccess: (props) => (
                       <InboxNotification.Custom
